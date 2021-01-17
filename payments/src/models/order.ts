@@ -51,6 +51,8 @@ orderSchema.pre('save', function (this: OrderDoc, done) {
   this.$where = {
     version: this.get('version') - 1,
   };
+
+  //@ts-ignore
   done();
 });
 

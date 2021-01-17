@@ -53,6 +53,8 @@ ticketSchema.pre('save', function (next) {
   this.$where = {
     version: this.get('version') - 1,
   };
+
+  //@ts-ignore
   next();
 });
 
