@@ -5,6 +5,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/use-regex: 'true'
+    service.beta.kubernetes.io/do-loadbalancer-hostname: 'www.tickets.alextokman.ru'
 spec:
   rules:
     - host: www.tickets.alextokman.ru
