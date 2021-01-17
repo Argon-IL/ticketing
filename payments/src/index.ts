@@ -6,6 +6,7 @@ import { OrderCreatedListener } from './events/listeners/order-created-listener'
 import mongoose from 'mongoose';
 
 const start = async () => {
+  console.log('Starting...');
   if (!process.env.JWT_KEY || !process.env.MONGO_URI) {
     throw new Error('JWT_KEY and MONGO_URI must be defined!');
   }
